@@ -1,8 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import reportWebVitals from "./reportWebVitals";
-import CreateProductView from "./routes/CreateProductView";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import CreateProductView from "./routes/CreateProductView";
+import ShowProductsView from "./routes/ShowProductsView";
+import DetailProductView from "./routes/DetailProductView";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -10,6 +12,9 @@ root.render(
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<CreateProductView />} />
+                <Route path="/create" element={<CreateProductView />} />
+                <Route path="/show" element={<ShowProductsView />} />
+                <Route path="/products/:id" element={<DetailProductView />} />
             </Routes>
         </BrowserRouter>
     </React.StrictMode>

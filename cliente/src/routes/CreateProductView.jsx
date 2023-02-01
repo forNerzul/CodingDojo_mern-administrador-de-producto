@@ -1,4 +1,4 @@
-import CreateProduct from "../components/CreateProductForm";
+import CreateProduct from "../components/CreateProductView/CreateProductForm";
 import "../css/styles.css";
 import "../routes/CreateProductView.css";
 

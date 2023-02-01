@@ -5,16 +5,20 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import CreateProductView from "./routes/CreateProductView";
 import ShowProductsView from "./routes/ShowProductsView";
 import DetailProductView from "./routes/DetailProductView";
+import EditProductView from "./routes/EditProductView";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <React.StrictMode>
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<CreateProductView />} />
+                <Route path="/" element={<ShowProductsView />} />
                 <Route path="/create" element={<CreateProductView />} />
-                <Route path="/show" element={<ShowProductsView />} />
                 <Route path="/products/:id" element={<DetailProductView />} />
+                <Route
+                    path="/products/:id/edit"
+                    element={<EditProductView />}
+                />
             </Routes>
         </BrowserRouter>
     </React.StrictMode>

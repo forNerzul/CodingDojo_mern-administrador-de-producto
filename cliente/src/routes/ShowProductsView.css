@@ -1,0 +1,35 @@
+.product-list {
+    display: flex;
+    flex-direction: column;
+    margin: 0 -10px;
+}
+
+.product-list-item {
+    display: flex;
+    gap: 10px;
+    width: 50%;
+    padding: 0 10px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.product-list-item-btn {
+    padding: 3px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.product-list-item-btn > a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.product-list-item-btn:hover {
+    background-color: #000;
+    color: #fff;
+}

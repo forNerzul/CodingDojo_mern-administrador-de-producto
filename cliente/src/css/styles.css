@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+
+.container {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.page-header {
+    background: #333;
+    color: #fff;
+    padding: 20px 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.main-btn {
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    box-shadow: 3px 3px 0px #333;
+}
